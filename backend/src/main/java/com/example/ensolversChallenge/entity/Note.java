@@ -33,7 +33,7 @@ public class Note {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-
+	
 	@Column(name = "title", nullable = false, length = 150)
 	private String title;
 
