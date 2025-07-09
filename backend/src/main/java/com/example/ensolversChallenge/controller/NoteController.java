@@ -44,8 +44,8 @@ public class NoteController {
     }
 
     @GetMapping("/noteState/{state}")
-    public Note findNoteByState(@PathVariable State state) {
-        return service.getNoteByState(state);
+    public List<Note> findNoteByState(@PathVariable State state) {
+        return service.getNotesByState(state);
     }
 
     @PutMapping("/update")

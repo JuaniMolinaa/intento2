@@ -33,10 +33,10 @@ public class NoteService {
         return repository.findById(id).orElse(null);
     }
 
-    public Note getNoteByState(State state) {
+    public List<Note> getNotesByState(State state) {
         return repository.findByState(state);
     }
-
+    
     public String deleteNote(Long id) {
         repository.deleteById(id);
         return "Note removed! " + id;

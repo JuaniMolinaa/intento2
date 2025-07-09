@@ -16,7 +16,7 @@ public interface NoteRepository extends JpaRepository<Note,Long> {
 
 	Optional<Note> findById(long id);
 
-	Note findByState(State state);
+	List<Note> findByState(State state);
 
 
 	/*@Query("SELECT n FROM notes n Where n.id = :id")
