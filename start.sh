@@ -8,7 +8,7 @@
 # - Have MySQL running locally on port 3306
 
 # Starting Settings
-DB_NAME="demo"
+DB_NAME="ensolversJM"
 DB_USER="root"
 DB_PASS="root"
 

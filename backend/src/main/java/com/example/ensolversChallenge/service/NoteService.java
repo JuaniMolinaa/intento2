@@ -21,10 +21,6 @@ public class NoteService {
         return repository.save(note);
     }
 
-    public List<Note> saveNotes(List<Note> notes) {
-        return repository.saveAll(notes);
-    }
-
     public List<Note> getNotes() {
         return repository.findAll();
     }

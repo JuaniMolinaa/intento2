@@ -28,11 +28,6 @@ public class NoteController {
         return service.save(note);
     }
 
-    @PostMapping("/addNotes")
-    public List<Note> addNotes(@RequestBody List<Note> notes) {
-        return service.saveNotes(notes);
-    }
-
     @GetMapping("/notes")
     public List<Note> findAllNotes() {
         return service.getNotes();
