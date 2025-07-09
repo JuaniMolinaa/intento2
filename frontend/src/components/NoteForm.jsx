@@ -7,7 +7,7 @@ export default function NoteForm({ onNoteAdded }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!content.trim()) return;
-    await axios.post('http://localhost:8080/api/notes', { content });
+    await axios.post('/api/notes', { content });
     setContent('');
     onNoteAdded();
   };

@@ -3,12 +3,12 @@ import axios from 'axios';
 
 export default function NoteItem({ note, onChange }) {
   const toggleArchived = async () => {
-    await axios.put(`http://localhost:8080/api/notes/${note.id}/toggle-archive`);
+    await axios.put('/api/notes/${note.id}/toggle-archive');
     onChange();
   };
 
   const handleDelete = async () => {
-    await axios.delete(`http://localhost:8080/api/notes/delete/${note.id}`);
+    await axios.delete('/api/notes/delete/${note.id}');
     onChange();
   };
 

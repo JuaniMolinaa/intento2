@@ -7,7 +7,7 @@ export default function ActiveNotes() {
   const [notes, setNotes] = useState([]);
 
   const fetchNotes = async () => {
-    const res = await axios.get('http://localhost:8080/api/notes/active');
+    const res = await axios.get('/api/notes/active');
     setNotes(res.data);
   };
 
